@@ -1,14 +1,17 @@
-import path from "path";
-
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   output: "export",
+
   images: {
     unoptimized: true,
   },
-  turbopack: {
-    root: path.join(process.cwd()),
-  },
+
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
+
+  basePath: "",
+  assetPrefix: "",
 };
 
 export default nextConfig;
