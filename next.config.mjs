@@ -8,10 +8,9 @@ const nextConfig = {
   },
 
   trailingSlash: true,
-  skipTrailingSlashRedirect: true,
 
+  assetPrefix: "./",
   basePath: "",
-  assetPrefix: "",
 };
 
 export default nextConfig;
